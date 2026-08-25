@@ -19,10 +19,18 @@
         .lang-switch { margin-left: 30px; padding-left: 20px; border-left: 1px solid var(--border); font-size: 0.85rem; font-weight: 600; }
         .lang-switch a { margin-left: 8px; color: var(--gray); text-decoration: none; }
         .lang-switch a.active, .lang-switch a:hover { color: var(--accent); }
-        .hero { max-width: 950px; margin: 80px auto; padding: 50px; background: #fff; border: 1px solid var(--border); text-align: center; }
-        h1 { font-size: 2.5rem; margin-bottom: 20px; }
-        p { color: var(--gray); font-size: 1.1rem; max-width: 700px; margin: 0 auto 30px auto; }
-        .btn { display: inline-block; background: var(--accent); color: #fff; padding: 12px 30px; text-decoration: none; font-weight: 600; border-radius: 3px; }
+        .hero { max-width: 950px; margin: 60px auto 40px auto; padding: 50px; background: #fff; border: 1px solid var(--border); text-align: center; }
+        h1 { font-size: 2.3rem; margin-bottom: 20px; }
+        .hero p { color: var(--gray); font-size: 1.1rem; max-width: 700px; margin: 0 auto; }
+        
+        /* Pillars Grid */
+        .pillars-container { max-width: 950px; margin: 0 auto 60px auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .pillar-card { background: #fff; border: 1px solid var(--border); padding: 30px; display: flex; flex-direction: column; justify-content: space-between; }
+        .pillar-card h3 { margin-top: 0; font-size: 1.3rem; color: var(--primary); }
+        .pillar-card p { color: var(--gray); font-size: 0.95rem; margin-bottom: 25px; }
+        .btn { display: inline-block; background: var(--accent); color: #fff; padding: 10px 24px; text-decoration: none; font-weight: 600; border-radius: 3px; font-size: 0.9rem; transition: background 0.2s; }
+        .btn:hover { background: #6b0000; }
+        
         footer { text-align: center; padding: 40px; background: #fff; border-top: 1px solid var(--border); color: var(--gray); font-size: 0.85rem; }
     </style>
 </head>
@@ -46,7 +54,41 @@
         <div class="hero">
             <h1>工藝木桶採購與全球製桶服務</h1>
             <p>將傳統陳釀工藝與全球烈酒生產完美結合。立足香港與倫敦，為全球客戶提供頂級橡木桶、特色葡萄酒桶與稀有私人配額。</p>
-            <a href="sourcing_zh.html" class="btn">瀏覽現貨木桶目錄</a>
+        </div>
+
+        <div class="pillars-container">
+            <!-- Pillar 1: Cask Sourcing -->
+            <div class="pillar-card">
+                <div class="card-content">
+                    <h3>木桶採購</h3>
+                    <p>您的烈酒獨一無二，木桶亦當如此。我們透過全球製桶廠網絡與您合作，採購完全符合您願景的高品質橡木桶。</p>
+                </div>
+                <div class="card-footer">
+                    <a href="sourcing_zh.html" class="btn">了解更多</a>
+                </div>
+            </div>
+
+            <!-- Pillar 2: Exclusive Bottling -->
+            <div class="pillar-card">
+                <div class="card-content">
+                    <h3>獨家裝瓶</h3>
+                    <p>我們精心挑選並裝瓶稀有罕見的卓越木桶作為限量版發行，將獨特風味與尊貴溯源直接帶入市場。</p>
+                </div>
+                <div class="card-footer">
+                    <a href="bottling_zh.html" class="btn">了解更多</a>
+                </div>
+            </div>
+
+            <!-- Pillar 3: Cask Investment -->
+            <div class="pillar-card">
+                <div class="card-content">
+                    <h3>木桶投資</h3>
+                    <p>您的收藏值得最卓越的選擇。我們與您合作收購罕見珍貴木桶，解鎖切合您精確策略的高價值實物資產。</p>
+                </div>
+                <div class="card-footer">
+                    <a href="investment_zh.html" class="btn">了解更多</a>
+                </div>
+            </div>
         </div>
     </main>
     <footer>

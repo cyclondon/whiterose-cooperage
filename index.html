@@ -19,10 +19,18 @@
         .lang-switch { margin-left: 30px; padding-left: 20px; border-left: 1px solid var(--border); font-size: 0.85rem; font-weight: 600; }
         .lang-switch a { margin-left: 8px; color: var(--gray); text-decoration: none; }
         .lang-switch a.active, .lang-switch a:hover { color: var(--accent); }
-        .hero { max-width: 950px; margin: 80px auto; padding: 50px; background: #fff; border: 1px solid var(--border); text-align: center; }
-        h1 { font-size: 2.5rem; margin-bottom: 20px; }
-        p { color: var(--gray); font-size: 1.1rem; max-width: 700px; margin: 0 auto 30px auto; }
-        .btn { display: inline-block; background: var(--accent); color: #fff; padding: 12px 30px; text-decoration: none; font-weight: 600; border-radius: 3px; }
+        .hero { max-width: 950px; margin: 60px auto 40px auto; padding: 50px; background: #fff; border: 1px solid var(--border); text-align: center; }
+        h1 { font-size: 2.3rem; margin-bottom: 20px; }
+        .hero p { color: var(--gray); font-size: 1.1rem; max-width: 700px; margin: 0 auto; }
+        
+        /* Pillars Grid */
+        .pillars-container { max-width: 950px; margin: 0 auto 60px auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .pillar-card { background: #fff; border: 1px solid var(--border); padding: 30px; display: flex; flex-direction: column; justify-content: space-between; }
+        .pillar-card h3 { margin-top: 0; font-size: 1.3rem; color: var(--primary); }
+        .pillar-card p { color: var(--gray); font-size: 0.95rem; margin-bottom: 25px; }
+        .btn { display: inline-block; background: var(--accent); color: #fff; padding: 10px 24px; text-decoration: none; font-weight: 600; border-radius: 3px; font-size: 0.9rem; transition: background 0.2s; }
+        .btn:hover { background: #6b0000; }
+        
         footer { text-align: center; padding: 40px; background: #fff; border-top: 1px solid var(--border); color: var(--gray); font-size: 0.85rem; }
     </style>
 </head>
@@ -44,9 +52,43 @@
     </header>
     <main>
         <div class="hero">
-            <h1>Artisan Cask Sourcing & Global Cooperage</h1>
-            <p>Bridging traditional maturation craftsmanship with global spirits production. Supplying top-tier oak barrels, specialty wine casks, and rare private allocations from Hong Kong and London.</p>
-            <a href="sourcing.html" class="btn">Explore Our Inventory</a>
+            <h1>Mastering the Art of Cooperage, Spirits & Cask Investment</h1>
+            <p>Your premier global partner for artisan barrel sourcing, curated exclusive spirit releases, and cask asset management.</p>
+        </div>
+
+        <div class="pillars-container">
+            <!-- Pillar 1: Cask Sourcing -->
+            <div class="pillar-card">
+                <div class="card-content">
+                    <h3>Cask Sourcing</h3>
+                    <p>Your spirits are unique, and your barrels should be too. We partner with you to source exceptional barrels from our global network of cooperages, tailored entirely to your vision.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="sourcing.html" class="btn">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Pillar 2: Exclusive Bottling -->
+            <div class="pillar-card">
+                <div class="card-content">
+                    <h3>Exclusive Bottling</h3>
+                    <p>We curate and bottle rare, exceptional casks as limited-edition releases, bringing unique flavor profiles and prestigious provenance directly to the market.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="bottling.html" class="btn">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Pillar 3: Cask Investment -->
+            <div class="pillar-card">
+                <div class="card-content">
+                    <h3>Cask Investment</h3>
+                    <p>Your collection deserves something truly exceptional. We partner with you to acquire unique rare casks, unlocking high-value physical assets tailored to your exact strategy.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="investment.html" class="btn">Learn More</a>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
