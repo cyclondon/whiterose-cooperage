@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Articles & Maturation Masterclass | White Rose Cooperage</title>
-    <meta name="description" content="Explore expert articles on wood science, cask seasoning, and craft distillation maturation techniques from White Rose Cooperage.">
+    <title>Articles & Masterclass | White Rose Cooperage</title>
+    <meta name="description" content="Expert insights and comprehensive masterclass guides for craft distillers on cask sourcing, oak selection, re-charring, and seasoning strategies.">
     <link rel="canonical" href="https://whiterose-cooperage.com/articles.html">
-    <link rel="alternate" hreflang="en" href="https://whiterose-cooperage.com/articles.html">
-    <link rel="alternate" hreflang="zh-HK" href="https://whiterose-cooperage.com/articles_zh.html">
     <style>
         :root { --primary: #1a1a1a; --accent: #8b0000; --light: #f9f8f6; --gray: #555; --border: #e0e0e0; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; background-color: var(--light); color: var(--primary); line-height: 1.7; }
@@ -16,14 +14,17 @@
         nav { display: flex; align-items: center; }
         nav a { margin-left: 20px; text-decoration: none; color: var(--primary); font-size: 0.9rem; font-weight: 500; }
         nav a:hover, nav a.active { color: var(--accent); }
-        .lang-switch { margin-left: 30px; padding-left: 20px; border-left: 1px solid var(--border); font-size: 0.85rem; font-weight: 600; }
-        .lang-switch a { margin-left: 8px; color: var(--gray); text-decoration: none; }
-        .lang-switch a.active, .lang-switch a:hover { color: var(--accent); }
-        .content-container { max-width: 950px; margin: 60px auto; padding: 50px; background: #fff; border: 1px solid var(--border); }
-        h1 { font-size: 2.2rem; margin-top: 0; }
-        h2 { font-size: 1.3rem; margin-top: 35px; color: var(--accent); }
+        .main-container { max-width: 950px; margin: 60px auto; padding: 0 20px; }
+        .page-intro { background: #fff; border: 1px solid var(--border); padding: 40px; margin-bottom: 40px; }
+        .page-intro h1 { font-size: 2.2rem; margin-top: 0; margin-bottom: 15px; }
+        .page-intro p { color: var(--gray); font-size: 1.05rem; margin: 0; }
+        
+        /* Article Section Styling with Borders */
+        .article-section { background: #fff; border: 1px solid var(--border); padding: 50px; margin-bottom: 40px; box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
+        .article-section h2 { font-size: 1.8rem; margin-top: 0; color: var(--primary); border-bottom: 2px solid var(--border); padding-bottom: 12px; }
+        .article-section h3 { font-size: 1.3rem; margin-top: 35px; margin-bottom: 12px; color: var(--primary); }
+        .article-meta { font-size: 0.9rem; color: #777; margin-bottom: 25px; font-style: italic; }
         p { color: var(--gray); font-size: 1.02rem; margin-bottom: 20px; }
-        .article-card { border-bottom: 1px solid var(--border); padding-bottom: 25px; margin-bottom: 25px; }
         footer { text-align: center; padding: 40px; background: #fff; border-top: 1px solid var(--border); color: var(--gray); font-size: 0.85rem; }
     </style>
 </head>
@@ -32,31 +33,56 @@
         <a href="index.html" class="logo">White Rose Cooperage</a>
         <nav>
             <a href="index.html">Home</a>
-            <a href="sourcing.html">Cask Sourcing</a>
-            <a href="bottling.html">Exclusive Bottling</a>
-            <a href="investment.html">Cask Investment</a>
             <a href="articles.html" class="active">Articles & Masterclass</a>
             <a href="faq.html">FAQ</a>
             <a href="contact.html">Contact</a>
-            <div class="lang-switch">
-                <a href="articles.html" class="active">EN</a> | <a href="articles_zh.html">繁中</a>
-            </div>
         </nav>
     </header>
-    <main>
-        <div class="content-container">
-            <h1>Maturation Masterclass & Articles</h1>
-            <p>Delve into our technical insights, wood science breakdowns, and innovative cask seasoning methodologies designed for distillers and connoisseurs.</p>
-            <div class="article-card">
-                <h2>The Science of Tea Cask Seasoning: Beyond Traditional Oak</h2>
-                <p>An in-depth exploration of how 20-year Pu-erh tea cask seasoning alters lignin breakdown, tannin extraction, and creates unprecedented flavor dimensions in modern spirits.</p>
-            </div>
-            <div class="article-card">
-                <h2>Navigating Cask Selection for Craft Distilleries</h2>
-                <p>Why avoiding minimum order quantities and leveraging hybrid wood staves (such as Mizunara and American White Oak) transforms micro-batch distillation economics.</p>
-            </div>
+    
+    <main class="main-container">
+        <!-- Hub Introduction -->
+        <div class="page-intro">
+            <h1>Masterclass Hub</h1>
+            <p>Explore our comprehensive guides tailored for craft distillers, blenders, and cask asset investors looking to optimize spirit maturation, wood selection, and asset valuation.</p>
         </div>
+
+        <!-- Article 1 -->
+        <article class="article-section" id="sourcing-guide">
+            <h2>How to Choose the Right Oak Cask for Craft Spirits Maturation</h2>
+            <div class="meta article-meta">Published by White Rose Cooperage Cask Sourcing Team</div>
+            
+            <p>For craft distillers, the cask is not merely a vessel; it is an active ingredient responsible for up to 70% of a spirit's final flavor and 100% of its color. Sourcing the correct oak cask requires a thorough understanding of wood species, toast profiles, and barrel capacity.</p>
+
+            <h3>1. American White Oak vs. European Oak vs. Mizunara</h3>
+            <p>American White Oak (Quercus alba) imparts sweet vanilla, coconut, and caramel notes due to high lactone levels. European Oak (Quercus robur) offers tighter tannins, delivering spicy, dried fruit, and deeper woody characteristics. For ultra-premium releases, rare hybrid options like Mizunara staves provide unique sandalwood and incense aromas.</p>
+
+            <h3>2. Understanding Toast and Char Levels</h3>
+            <p>The internal preparation of the barrel dictates how wood sugars and lignin break down. Heavy charring creates a rich charcoal filter layer that softens harsh impurities, while medium-to-heavy toasting draws out complex vanillins and spice compounds essential for long-term maturation.</p>
+
+            <h3>3. Sourcing Flexibility: Why No-MOQ Matters for Micro-Batches</h3>
+            <p>Traditional cooperages often enforce high minimum order quantities, creating bottlenecks for craft distillers testing experimental batches. Working with a sourcing partner offering no minimum order quantity (No MOQ) allows distillers to trial single 40L barrels or scaled formats before committing to full container production.</p>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="article-section" id="seasoned-casks">
+            <h2>The Flavor and Financial ROI of Re-charred and Seasoned Casks</h2>
+            <div class="meta article-meta">Published by White Rose Cooperage Innovation Team</div>
+            
+            <p>In a competitive global spirits market, standard bourbon or sherry barrels often yield predictable profiles. To command premium retail price points and capture connoisseur attention, craft distilleries are increasingly sourcing custom-seasoned and innovative re-charred casks.</p>
+
+            <h3>1. Accelerating Maturation Through Re-shaving and Re-charring</h3>
+            <p>Ex-bourbon casks that have exhausted their active wood sugars can be mechanically shaved down to virgin oak layers and re-charred. This revitalization process revives active vanillins and heavy caramel compounds, drastically cutting down maturation lead times for micro-distilleries.</p>
+
+            <h3>2. Beyond Standard Wine: Specialty Seasonings (Pu-erh Tea Cask Finishes)</h3>
+            <p>Innovative cask seasoning goes beyond traditional sherry or port. By seasoning casks with specialized liquids—such as 20-year Pu-erh tea cask seasoning developed in collaboration with cooperage specialists—distillers infuse raw spirits with profound herbal depth, earthy complexity, and rare market differentiation.</p>
+
+            <h3>3. Maximizing Asset Valuation for Limited Releases</h3>
+            <p>When you source specialized, limited-run seasoning casks rather than generic stock, your finished liquid naturally positions itself in the ultra-premium tier. Collectors and investors actively seek out unique wood interactions, yielding a significantly higher return on investment per bottle produced.</p>
+        </article>
     </main>
-    <footer><p>&copy; 2026 White Rose Cooperage. All rights reserved.</p></footer>
+
+    <footer>
+        <p>&copy; 2026 White Rose Cooperage. All rights reserved.</p>
+    </footer>
 </body>
 </html>
